@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Tesla el coche de tus sueños">
 	<main>
 		<header class="py-4 px-10 flex items-center fixed top-0 w-full justify-between z-40 text-white" >
 			<div class="flex flex-grow basis-0" >
@@ -28,11 +28,19 @@ import Layout from '../layouts/Layout.astro';
 			</nav>
 		</header>
 		<section class="bg-black h-screen w-screen text-center relative overflow-hidden" >
-			<h2>Disfrute de Tesla</h2>
-			<p>Programe una prueba de conduccion hoy mismo</p>
-			<a>Prueba de conduccion</a>
-			<div class="absolute top-0 bottom-0" >
-				<video autoplay muted loop src="/video.webm"></video>
+			<div class="z-30 relative h-full flex flex-col" >
+				<header class="" >
+					<h2 class="text-white py-40 text-[40px] font-medium" >Disfrute de Tesla</h2>
+					<p class="text-white text-sm" >Programe una prueba de conduccion hoy mismo</p>
+				</header>
+				<footer class="flex flex-col flex-grow flex-nowrap justify-end pb-20" >
+					<div>
+					<a class="text-white border-white border-[3px] text-sm font-medium px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors duration-300" >Prueba de conduccion</a>
+					</div>
+				</footer>
+			</div>
+			<div class="absolute top-0 bottom-0 h-full z-10 w-full" >
+				<video class="object-center object-cover h-full w-full" autoplay muted loop src="/video.webm"></video>
 			</div>
 		</section>
 	</main>
